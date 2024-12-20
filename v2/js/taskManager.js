@@ -25,7 +25,7 @@ export class TaskManager {
                         task.notes
                     ));
                 });
-         
+         // Convert API data to task objects
             workTasks.data.forEach(task => {
                 console.log(task);
                 this.tasks.push(new WorkTask(
